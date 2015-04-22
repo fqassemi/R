@@ -21,7 +21,7 @@ Kmean <- function(X,K) {
   return(list(cluster=cor_new, centers=Ctr))
 }
 
-X <- as.matrix(read.csv("hw3-cluster.csv",header=F)) 
+X <- as.matrix(read.csv("cluster.csv",header=F)) 
 dimnames(X)[[2]]<-NULL
 
 nstart <- 200 
