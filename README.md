@@ -7,7 +7,7 @@ The basic algorithm is as following:
 4) Assign each data point to the cluster centre whose mean yields the minimum. 
 5) Update the cluster centroids as the mean of all those points assigned to the particular cluster. 
 
-In using Kmean some points are important to note. First, Kmean is sensitive to initialization. Hence, one should run the program many times. Second, Kmean algorithm could stuck in a local minimum, and feature scaling could improve clustering (to see this explicitly compare Kmean++ with and without normalization). In the case, where the number of clusters are not known, it is customary to plot the Kmean objective (cost) function vs the total number of clusters, and choose the value of K where cost function drop substantially, if such a point exist. 
+In using Kmean some points are important to note. First, Kmean is sensitive to initialization. Hence, one should run the program many times. Second, Kmean algorithm could stuck in a local minimum, and feature scaling could improve clustering (to see this explicitly compare two plots labelled as Kmean++ with and without normalization). In the case, where the number of clusters are not known, it is customary to plot the Kmean objective (cost) function vs the total number of clusters, and choose the value of K where cost function drop substantially, if such a point exist. 
 
 Kmean++ is another version of Kmean with improved initialization,  proposed in 2007 by David Arthur and Sergei Vassilvitskii. The initialization algorithm is as following:
 
