@@ -4,7 +4,7 @@ Kmean <- function(X,K) {
   rand<-sample(1:nrow(X),K)
   Ctr<-X[rand,]
   #one can combine these two steps into one single step as following.
-  # C <- X[sample.int(nrow(X),size = K, replace = FALSE),] 
+  # Ctr <- X[sample.int(nrow(X),size = K, replace = FALSE),] 
   cor_new <- rep(0,nrow(X)) 
   cor_old <- rep(-1,nrow(X))
   findmean<-function(i){
