@@ -22,7 +22,7 @@ Kmean <- function(X,K) {
   return(list(cluster=cor_new, centers=Ctr))
 }
   
-X <- as.matrix(read.csv("hw3-cluster3.csv",header=F)) 
+X <- as.matrix(read.csv("./R/cluster2.csv",header=F)) 
 dimnames(X)[[2]]<-NULL
 #The following line is used for normalizing data. 
 X<-apply(X,2, function(x) (x-mean(x))/sd(x)) 
